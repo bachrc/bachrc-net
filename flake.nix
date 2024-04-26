@@ -1,37 +1,35 @@
 {
+  description = "Bachrc.net";
+
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    systems.url = "github:nix-systems/default";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    systems,
-    nixpkgs,
-    ...
-  } @ inputs: let
-    eachSystem = f:
-      nixpkgs.lib.genAttrs (import systems) (
-        system:
-          f nixpkgs.legacyPackages.${system}
-      );
-  in {
-    devShells = eachSystem (pkgs: {
-      default = pkgs.mkShell {
-        buildInputs = [
-          pkgs.nodejs_21
-          # You can set the major version of Node.js to a specific one instead
-          # of the default version
-          # pkgs.nodejs-19_x
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+    let
+      pkgs = import nixpkgs {
+        inherit system;
+      };
 
-          # You can choose pnpm, yarn, or none (npm).
-          pkgs.nodePackages.pnpm
-          # pkgs.yarn
+      devDependencies = with pkgs; [
+        nil
+        typescript
+      ];
 
-          pkgs.nodePackages.typescript
-          pkgs.nodePackages.typescript-language-server
-          pkgs.mask
-        ];
+      buildInputs = with pkgs; [
+        mask
+        nodejs_20
+      ];
+    in
+    {
+      # run with `nix develop`
+      devShells = {
+        default = with pkgs; mkShell {
+          buildInputs = [ buildInputs devDependencies ];
+        };
       };
     });
-  };
 }
