@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "i18n-ally.localesPaths": ["src/lib/i18n/locales"],
+  "editor.tabSize": 2,
+  "i18n-ally.displayLanguage": "fr",
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.extract.ignoredByFiles": {
+    "src/routes/cv/+page.svelte": [
+      "\n            Développement applicatif de micro-services, mise en place du TDD,\n            BDD et de tests d'intégration au sein de la plateforme\n          "
+    ]
+  },
+  "i18n-ally.extract.ignored": [
+    "Contribution à la mise en place d'une organisation Kanban",
+    "\n            Support Niveau 2 et 3, interventions sur l'infrastructure pour\n            investiguer les problèmes sur la plateforme et aider les\n            utilisateurs\n          ",
+    "Organisation et animation de meetups internes"
+  ],
+  "i18n-ally.annotationInPlace": true,
+  "i18n-ally.annotations": true,
+  "i18n-ally.review.enabled": true,
+  "i18n-ally.sortKeys": true
+}
