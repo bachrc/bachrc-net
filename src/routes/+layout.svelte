@@ -11,8 +11,8 @@
 
 {#if !$isLoading}
   <div class="flex flex-col mx-2 min-h-screen">
-    <nav class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print">
-      <div class="grow"></div>
+    <nav
+      class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end">
       <a href="/">{$t('home')}</a>
       <span>-</span>
       <a href="/about">{$t('a-propos')}</a>

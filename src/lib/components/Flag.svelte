@@ -25,5 +25,5 @@
   <img
     alt={$t('changer-de-langue')}
     src={otherLocaleIconUrl()}
-    class="h-full" />
+    class="w-8" />
 </button>
