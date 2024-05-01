@@ -23,7 +23,7 @@
       <Flag />
     </nav>
     {@render children()}
-    <footer class="no-print">
+    <footer class="container mx-auto no-print">
       <span>Yohann Bacha, 2024</span>
     </footer>
   </div>

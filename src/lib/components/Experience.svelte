@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import ThemesList from './ThemesList.svelte';
-  import { locale, t } from 'svelte-i18n';
+  import { t } from 'svelte-i18n';
+  import LocalisedContent from './LocalisedContent.svelte';
 
   let {
     titre,
@@ -18,15 +19,6 @@
     descriptionFr: Snippet;
     descriptionEn: Snippet;
   } = $props();
-
-  function currentLocaleDescription(): Snippet {
-    switch ($locale) {
-      case 'en-US':
-        return descriptionEn;
-      default:
-        return descriptionFr;
-    }
-  }
 </script>
 
 <div class="flex flex-col">
@@ -40,7 +32,9 @@
   </div>
   <hr class="my-2" />
   <div class="flex flex-col gap-2 text-justify">
-    {@render currentLocaleDescription()()}
+    <LocalisedContent
+      frenchContent={descriptionFr}
+      englishContent={descriptionEn} />
   </div>
   {#if themes.length > 0}
     <div class="mt-2 flex flex-row">

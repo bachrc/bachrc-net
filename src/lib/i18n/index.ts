@@ -2,12 +2,13 @@
 import { browser } from '$app/environment';
 import { init, register } from 'svelte-i18n';
 
-const defaultLocale = 'fr-FR';
+export const frenchLocale = 'fr-FR';
+export const englishLocale = 'en-US';
 
-register('en-US', () => import('./locales/en.json'));
-register('fr-FR', () => import('./locales/fr.json'));
+register(englishLocale, () => import('./locales/en.json'));
+register(frenchLocale, () => import('./locales/fr.json'));
 
 init({
-  fallbackLocale: defaultLocale,
-  initialLocale: browser ? window.navigator.language : defaultLocale
+  fallbackLocale: frenchLocale,
+  initialLocale: browser ? window.navigator.language : frenchLocale
 });
