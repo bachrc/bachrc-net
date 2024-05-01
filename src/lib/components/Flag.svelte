@@ -1,6 +1,7 @@
 <script lang="ts">
   import frenchFlag from '$lib/assets/france.svg';
   import usFlag from '$lib/assets/us.svg';
+  import { englishLocale, frenchLocale } from '$lib/i18n';
   import { locale, t } from 'svelte-i18n';
 
   function otherLocaleIconUrl(): string {
@@ -13,10 +14,10 @@
 
   function switchLocale() {
     console.log($locale);
-    if ($locale === 'fr-FR') {
-      $locale = 'en-US';
+    if ($locale === frenchLocale) {
+      $locale = englishLocale;
     } else {
-      $locale = 'fr-FR';
+      $locale = frenchLocale;
     }
   }
 </script>

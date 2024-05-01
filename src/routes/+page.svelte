@@ -10,11 +10,11 @@
 <main class="items-center flex flex-col grow justify-center">
   <picture>
     <source
-      type="image/webp"
-      srcset={photoWebp} />
-    <source
       type="image/avif"
       srcset={photoAvif} />
+    <source
+      type="image/webp"
+      srcset={photoWebp} />
     <img
       src={photoPng}
       alt="My face"
