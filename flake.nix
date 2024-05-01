@@ -20,7 +20,7 @@
       ];
 
       buildInputs = with pkgs; [
-        mask
+        just
         nodejs_20
       ];
     in
