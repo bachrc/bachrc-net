@@ -7,8 +7,11 @@
   import { t } from 'svelte-i18n';
 </script>
 
+<svelte:head>
+  <title>bachrc - CV Yohann Bacha</title>
+</svelte:head>
 <div
-  class="flex flex-col items-center gap-4 text-sm sm:items-start sm:flex-row sm:gap-0 lg:container lg:mx-auto bg-indigo-100/50">
+  class="flex flex-col items-center gap-4 sm:text-sm sm:items-start sm:flex-row sm:gap-0 lg:container lg:mx-auto bg-indigo-100/50">
   <aside class="flex flex-col w-11/12 sm:w-1/4 p-4 text-justify">
     <div class="flex flex-col items-center mb-4 text-center">
       <picture>
@@ -21,7 +24,7 @@
 
         <img
           src={photoPng}
-          alt="My face"
+          alt={$t('mon-visage')}
           class="rounded-full h-48" />
       </picture>
       <span class="text-2xl font-bold">Yohann Bacha</span>

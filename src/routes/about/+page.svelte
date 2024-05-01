@@ -1,6 +1,11 @@
 <script>
   import LocalisedContent from '$lib/components/LocalisedContent.svelte';
+  import { t } from 'svelte-i18n';
 </script>
+
+<svelte:head>
+  <title>bachrc - {$t('a-propos')}</title>
+</svelte:head>
 
 <div
   class="container mx-auto leading-8 bg-indigo-100/50 rounded-xl text-lg p-4 flex flex-col gap-6 text-justify font-serif sm:w-2/3">

@@ -5,10 +5,18 @@
   import { isLoading } from 'svelte-i18n';
   import { t } from 'svelte-i18n';
   import Flag from '$lib/components/Flag.svelte';
-
+  import pngIcon from '$lib/assets/coffee-icon.png';
   let { children } = $props();
 </script>
 
+<svelte:head>
+  <title>bachrc</title>
+  <link
+    rel="icon"
+    sizes="96x96"
+    type="image/png"
+    href={pngIcon} />
+</svelte:head>
 {#if !$isLoading}
   <div class="flex flex-col mx-2 min-h-screen">
     <nav
