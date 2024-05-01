@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  em {
+    @apply font-bold not-italic;
+  }
+
+  a {
+    @apply underline underline-offset-2 text-blue-900;
+  }
+
+  @font-face {
+    font-family: 'Lora';
+    src: url('$lib/assets/fonts/Lora.woff2') format('woff2');
+    font-style: normal;
+  }
+
   @font-face {
     font-family: 'Lato';
     src: url('$lib/assets/fonts/Lato/Lato-Light.woff2') format('woff2');

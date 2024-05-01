@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        serif: ['Lora', 'ui-serif', 'system-ui'],
         Lato: 'Lato'
       }
     }
