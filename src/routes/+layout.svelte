@@ -20,7 +20,7 @@
 {#if !$isLoading}
   <div class="flex flex-col mx-2 min-h-screen">
     <nav
-      class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end">
+      class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end sm:container sm:mx-auto">
       <a href="/">{$t('home')}</a>
       <span>-</span>
       <a href="/about">{$t('a-propos')}</a>
@@ -31,7 +31,7 @@
       <Flag />
     </nav>
     {@render children()}
-    <footer class="container mx-auto no-print">
+    <footer class="sm:container sm:mx-auto no-print">
       <span>Yohann Bacha, 2024</span>
     </footer>
   </div>
