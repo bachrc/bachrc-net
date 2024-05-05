@@ -10,7 +10,7 @@
 <svelte:head>
   <title>bachrc - CV Yohann Bacha</title>
 </svelte:head>
-<main
+<div
   class="flex flex-col items-center gap-4 sm:text-sm sm:items-start sm:flex-row sm:gap-0 lg:container lg:mx-auto bg-indigo-100/50">
   <aside class="flex flex-col w-11/12 sm:w-1/4 p-4 text-justify">
     <div class="flex flex-col items-center mb-4 text-center">
@@ -141,7 +141,7 @@
     </div>
   </aside>
 
-  <main class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-4">
+  <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-4">
     <h1 class="text-xl">{$t('experiences')}</h1>
     <Experience
       titre="Senior Software Engineer"
@@ -339,5 +339,5 @@
         </p>
       {/snippet}
     </Experience>
-  </main>
-</main>
+  </div>
+</div>

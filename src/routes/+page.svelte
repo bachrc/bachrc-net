@@ -11,7 +11,7 @@
   <title>bachrc</title>
 </svelte:head>
 
-<main class="items-center flex flex-col grow justify-center">
+<div class="items-center flex flex-col grow justify-center">
   <picture>
     <source
       type="image/avif"
@@ -41,4 +41,4 @@
         alt="Linkedin Logo" />
     </a>
   </div>
-</main>
+</div>
