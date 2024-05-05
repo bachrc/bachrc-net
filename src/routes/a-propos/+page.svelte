@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div
-  class="container mx-auto leading-8 bg-indigo-100/50 rounded-xl text-lg p-4 flex flex-col gap-6 text-justify font-serif sm:w-2/3 my-8">
+  class="container mx-auto leading-8 bg-indigo-100/50 rounded-xl text-lg p-4 py-8 flex flex-col gap-6 text-justify font-serif sm:w-2/3 my-8 h-max">
   <LocalisedContent>
     {#snippet frenchContent()}
       <h1 class="text-2xl pb-2 border-b border-b-indigo-300">Qui suis-je ?</h1>
