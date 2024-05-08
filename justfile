@@ -4,4 +4,4 @@ default:
 
 # Launches the dev server, hot reloading for changes
 dev:
-  npm run dev --host
+  npm run dev --host --open

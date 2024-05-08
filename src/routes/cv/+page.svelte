@@ -122,9 +122,9 @@
         <h1 class="text-xl">{$t('langues')}</h1>
         <div class="grid grid-cols-3">
           <span>{$t('francais')}</span>
-          <span class="col-span-2">{$t('langue-maternelle')}</span>
+          <span class="col-span-2">{$t('langue-maternelle')} (C2)</span>
           <span>{$t('anglais')}</span>
-          <span class="col-span-2">{$t('professionnel')}</span>
+          <span class="col-span-2">{$t('professionnel')} (C1)</span>
         </div>
       </div>
       <hr class="ml-0 w-1/2" />
@@ -151,14 +151,14 @@
       {#snippet descriptionFr()}
         <p>
           J'ai participé au développement applicatif des micro-services, à la
-          mise en place et la découverte de pratiques du craft: TDD, BDD et des
-          tests d'intégration. J'ai également contribué à l'organisation des
-          équipes de développement avec une organisation autour du Kanban, et de
-          spécifications.
+          mise en place ainsi qu'à la découverte de pratiques du craft: TDD, BDD
+          et des tests d'intégration. J'ai mis en place le système de
+          spécifications, et ai contribué à la bonne organisation des équipes de
+          développement, organisation qui s'est faite en Kanban.
         </p>
         <p>
-          J'ai également effectué du support Niveau 2 et 3, et ai intervenu sur
-          l'infrastructure pour investiguer, et résoudre les problèmes des
+          J'ai également effectué du support Niveau 2 et 3, et suis intervenu
+          sur l'infrastructure pour investiguer, et résoudre les problèmes des
           utilisateurs.
         </p>
       {/snippet}
@@ -188,7 +188,8 @@
           d'intégration automatisés, pipelines CI/CD sur Github Actions.
         </p>
         <p>
-          J'y ai également formé les jeunes développeur•ses aux pratiques craft.
+          J'y ai également formé les jeunes développeur•euses aux pratiques
+          craft.
         </p>
       {/snippet}
       {#snippet descriptionEn()}
@@ -227,9 +228,9 @@
       themes={['Java 17', 'Angular', 'Spring', 'Kotlin', 'Redis']}>
       {#snippet descriptionFr()}
         <p>
-          J'ai pris part au sein de l’équipe en charge du Calculateur
-          Multi-modal d’Itinéraires. J'ai participé là bas à l'élaboration du
-          backlog du produit, tout en l'entretenant : refacto, développement de
+          J'ai contribué au sein de l’équipe en charge du Calculateur
+          Multi-modal d’Itinéraires. J'ai participé à l'élaboration du backlog
+          du produit, tout en l'entretenant : refacto, développement de
           nouvelles fonctionnalités.
         </p>
       {/snippet}
@@ -256,16 +257,16 @@
       {#snippet descriptionFr()}
         <p>
           Au sein d'une équipe de 5 personnes suivant les méthodes Scrum, j'ai
-          participé dès les débuts à l'élaboration d'une application du
+          contribué dès les débuts à l'élaboration d'une application du
           référentiel métier de Dalkia, SEE. Un peu plus tard, j'ai participé
           dès les premières spécifications à la réalisation d'une application
           gérant les primes des techniciens Dalkia, cette fois-ci conçue avec
           une architecture hexagonale.
         </p>
         <p>
-          J'ai participé sur ces deux projets à la mise en place de pratiques
-          craft au sein des équipes, comme avec du TDD, du pair programming, et
-          se concentrer autour du métier de l'application. Je suis également
+          Ces deux projets m'ont permis de mettre en place des pratiques craft
+          au sein des équipes, telles que du TDD, du pair programming, et de me
+          concentrer autour du métier de l'application. Je suis également
           intervenu sur les pipelines DevOps des applications.
         </p>
       {/snippet}
@@ -293,7 +294,7 @@
       themes={['Java', 'Spring Boot', 'React']}>
       {#snippet descriptionFr()}
         <p>
-          J'ai participé à la mise en place de solutions interne pour le
+          J'ai participé à la mise en place de solutions internes pour le
           département 2AV: Aide à la Vente. Dans un cadre agile, j'ai réalisé
           des outils numériques aidant le département 2AV avec Spring Web et
           React, et mis en place les fondations pour les tests d'integration de
@@ -317,15 +318,15 @@
       themes={['Java', 'Kafka', 'Spring Boot', 'Cassandra', 'Apache Flink']}>
       {#snippet descriptionFr()}
         <p>
-          J'ai développé d'un outil statistique avec Spring Boot détectant les
+          J'ai développé un outil statistique avec Spring Boot détectant les
           déconnexions de voitures à partir d’une source de messages Kafka, et
           ai migré un broker de messages single-node vers un cluster.
         </p>
         <p>
-          J'ai participé à la conception et conçu un prototype d'un protocole de
-          transmissions de messages pour les véhicules connectés, assurant la
-          transmission des données des périphériques embarqués dans les
-          véhicules Peugeot.
+          J'ai pris part à la conception d'un protocole de transmissions de
+          messages pour les véhicules connectés, et en ai créé un prototype
+          assurant la transmission des données des périphériques embarqués dans
+          les véhicules Peugeot.
         </p>
       {/snippet}
       {#snippet descriptionEn()}
