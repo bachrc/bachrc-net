@@ -90,6 +90,7 @@
             'Svelte',
             'Vue',
             'Tailwind',
+            'React',
             'Progressive Web Apps'
           ]} />
       </div>
