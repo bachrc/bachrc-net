@@ -205,7 +205,7 @@
     <Experience
       titre="Software Engineer"
       employeur="Malt"
-      duree="07/2023 - 10/2023"
+      duree="07/2022 - 10/2022"
       themes={['Java', 'Kotlin', 'Spring', 'Vue']}>
       {#snippet descriptionFr()}
         <p>
