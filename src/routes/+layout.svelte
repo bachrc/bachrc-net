@@ -16,6 +16,11 @@
     sizes="96x96"
     type="image/png"
     href={pngIcon} />
+  <script
+    async
+    defer
+    src="https://analytics.eu.umami.is/script.js"
+    data-website-id="23383369-9ca0-40c6-a63a-c28aec503cfb"></script>
 </svelte:head>
 {#if !$isLoading}
   <ul id="evitement">
@@ -33,8 +38,6 @@
       <a href="/a-propos">{$t('a-propos')}</a>
       <span>-</span>
       <a href="/cv">{$t('cv')}</a>
-      <span>-</span>
-      <a href="https://cyberendroit.net">{$t('blog')}</a>
       <Flag />
     </nav>
     <main

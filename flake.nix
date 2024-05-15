@@ -17,6 +17,8 @@
       devDependencies = with pkgs; [
         nil
         typescript
+        nodePackages_latest.typescript-language-server
+        nodePackages_latest.svelte-language-server
       ];
 
       buildInputs = with pkgs; [
