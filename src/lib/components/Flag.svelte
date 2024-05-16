@@ -5,7 +5,7 @@
   import { locale, t } from 'svelte-i18n';
 
   function otherLocaleIconUrl(): string {
-    if ($locale === 'fr-FR') {
+    if ($locale === frenchLocale) {
       return usFlag;
     } else {
       return frenchFlag;
@@ -13,7 +13,6 @@
   }
 
   function switchLocale() {
-    console.log($locale);
     if ($locale === frenchLocale) {
       $locale = englishLocale;
     } else {
@@ -22,7 +21,7 @@
   }
 </script>
 
-<button onclick={switchLocale}>
+<button on:click={switchLocale}>
   <img
     alt={$t('changer-de-langue')}
     src={otherLocaleIconUrl()}

@@ -6,7 +6,6 @@
   import { t } from 'svelte-i18n';
   import Flag from '$lib/components/Flag.svelte';
   import pngIcon from '$lib/assets/coffee-icon.png';
-  let { children } = $props();
 </script>
 
 <svelte:head>
@@ -16,6 +15,7 @@
     sizes="96x96"
     type="image/png"
     href={pngIcon} />
+
   <script
     async
     defer
@@ -38,12 +38,14 @@
       <a href="/a-propos">{$t('a-propos')}</a>
       <span>-</span>
       <a href="/cv">{$t('cv')}</a>
+      <span>-</span>
+      <a href="https://jardin.cyberendroit.net/Articles/">Blog</a>
       <Flag />
     </nav>
     <main
       class="flex grow"
       id="contenu">
-      {@render children()}
+      <slot></slot>
     </main>
     <footer class="sm:container sm:mx-auto no-print my-4 flex gap-4 flex-row">
       <span>Yohann Bacha, 2024</span>

@@ -149,7 +149,7 @@
       employeur="Scalingo"
       duree="01/2023 - {$t('aujourdhui')}"
       themes={['Golang', 'Vue', 'Docker', 'Linux']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai participé au développement applicatif des micro-services, à la
           mise en place ainsi qu'à la découverte de pratiques du craft: TDD, BDD
@@ -162,8 +162,8 @@
           sur l'infrastructure pour investiguer, et résoudre les problèmes des
           utilisateurs.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I participated in the application development of microservices, in the
           implementation and discovery of craft practices: TDD, BDD, and
@@ -174,14 +174,14 @@
           I also provided Level 2 and 3 support, and worked on the
           infrastructure to investigate and resolve user issues.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre="Freelance Lead Tech"
       employeur="Facildata"
       duree="01/2024 - 04/2024"
       themes={['Golang', 'Svelte', 'Rust', 'Nix', 'Github Actions']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai mis en place les fondations de la refonte du logiciel, et y ai
           élaboré et conçu le métier de l'application. J'ai réalisé les
@@ -192,8 +192,8 @@
           J'y ai également formé les jeunes développeur•euses aux pratiques
           craft.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I created the foundations for the software overhaul, where I
           elaborated and designed the application's business domain. I
@@ -202,46 +202,46 @@
           on GitHub Actions.
         </p>
         <p>I also trained the junior developers in craft practices.</p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre="Software Engineer"
       employeur="Malt"
       duree="07/2022 - 10/2022"
       themes={['Java', 'Kotlin', 'Spring', 'Vue']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai pris part aux développements au sein de l'équipe Finances, et y
           ai mis en place des tests d'integration.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I took part in the development efforts within the Finance team, where
           I implemented integration testing.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre={$t('developpeur-full-stack')}
       employeur="SNCF Connect & Tech"
       duree="09/2021 - 07/2022"
       themes={['Java 17', 'Angular', 'Spring', 'Kotlin', 'Redis']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai contribué au sein de l’équipe en charge du Calculateur
           Multi-modal d’Itinéraires. J'ai participé à l'élaboration du backlog
           du produit, tout en l'entretenant : refacto, développement de
           nouvelles fonctionnalités.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I was part of the team responsible for the Calculateur Multi-modal
           d’Itinéraires. There, I contributed to the elaboration of the product
           backlog, while maintaining it: refactoring, developing new features.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre={$t('developpeur-full-stack')}
@@ -255,7 +255,7 @@
         'Postgres',
         'AWS'
       ]}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           Au sein d'une équipe de 5 personnes suivant les méthodes Scrum, j'ai
           contribué dès les débuts à l'élaboration d'une application du
@@ -270,8 +270,8 @@
           concentrer autour du métier de l'application. Je suis également
           intervenu sur les pipelines DevOps des applications.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           As part of a 5-person team following Scrum methodologies, I joined
           from the beginning in the development of a business repository
@@ -286,14 +286,14 @@
           focusing on the application's business domain. I also worked on the
           DevOps pipelines for the applications.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre={$t('developpeur-full-stack')}
       employeur="Allianz"
       duree="05/2018 - 09/2018"
       themes={['Java', 'Spring Boot', 'React']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai participé à la mise en place de solutions internes pour le
           département 2AV: Aide à la Vente. Dans un cadre agile, j'ai réalisé
@@ -301,8 +301,8 @@
           React, et mis en place les fondations pour les tests d'integration de
           plusieurs projets.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I participated in the implementation of internal solutions for the 2AV
           department: Sales Support. Within an agile framework, I developed
@@ -310,14 +310,14 @@
           and laid the foundations for integration testing across multiple
           projects.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
     <Experience
       titre={$t('developpeur-back-end')}
       employeur="Peugeot PSA"
       duree="12/2017 - 05/2018"
       themes={['Java', 'Kafka', 'Spring Boot', 'Cassandra', 'Apache Flink']}>
-      {#snippet descriptionFr()}
+      <svelte:fragment slot="frenchContent">
         <p>
           J'ai développé un outil statistique avec Spring Boot détectant les
           déconnexions de voitures à partir d’une source de messages Kafka, et
@@ -329,8 +329,8 @@
           assurant la transmission des données des périphériques embarqués dans
           les véhicules Peugeot.
         </p>
-      {/snippet}
-      {#snippet descriptionEn()}
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
         <p>
           I developed a statistical tool with Spring Boot that detects vehicle
           disconnections from a Kafka message source, and migrated a single-node
@@ -339,7 +339,7 @@
           ensuring the transmission of data from embedded devices in Peugeot
           vehicles.
         </p>
-      {/snippet}
+      </svelte:fragment>
     </Experience>
   </div>
 </div>

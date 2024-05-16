@@ -1,24 +1,12 @@
 <script lang="ts">
-  import type { Snippet } from 'svelte';
   import ThemesList from './ThemesList.svelte';
   import { t } from 'svelte-i18n';
   import LocalisedContent from './LocalisedContent.svelte';
 
-  let {
-    titre,
-    employeur,
-    duree,
-    themes = [],
-    descriptionFr,
-    descriptionEn
-  }: {
-    titre: string;
-    employeur: string;
-    duree: string;
-    themes?: string[];
-    descriptionFr: Snippet;
-    descriptionEn: Snippet;
-  } = $props();
+  export let titre: string;
+  export let employeur: string;
+  export let duree: string;
+  export let themes: string[];
 </script>
 
 <div class="flex flex-col">
@@ -32,9 +20,14 @@
   </div>
   <hr class="my-2" />
   <div class="flex flex-col gap-2 text-justify">
-    <LocalisedContent
-      frenchContent={descriptionFr}
-      englishContent={descriptionEn} />
+    <LocalisedContent>
+      <svelte:fragment slot="englishContent">
+        <slot name="englishContent" />
+      </svelte:fragment>
+      <svelte:fragment slot="frenchContent">
+        <slot name="frenchContent" />
+      </svelte:fragment>
+    </LocalisedContent>
   </div>
   {#if themes.length > 0}
     <div class="mt-2 flex flex-row">

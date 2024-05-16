@@ -1,9 +1,5 @@
 <script lang="ts">
-  let {
-    themes
-  }: {
-    themes: string[];
-  } = $props();
+  export let themes: string[];
 </script>
 
 <ul class="themes">

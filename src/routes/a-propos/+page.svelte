@@ -10,7 +10,7 @@
 <div
   class="container mx-auto leading-8 bg-indigo-100/50 rounded-xl text-lg p-4 py-8 flex flex-col gap-6 text-justify font-serif sm:w-2/3 my-8 h-max">
   <LocalisedContent>
-    {#snippet frenchContent()}
+    <svelte:fragment slot="frenchContent">
       <h1 class="text-2xl pb-2 border-b border-b-indigo-300">Qui suis-je ?</h1>
       <p>
         Quelqu'un qui adore créer, et le code en est un fabuleux outil. Je suis
@@ -62,8 +62,8 @@
         <a href="mailto:contact@bachrc.net">me contacter</a>
         pour boire un café ensemble. J'ai de très bonnes adresses.
       </p>
-    {/snippet}
-    {#snippet englishContent()}
+    </svelte:fragment>
+    <svelte:fragment slot="englishContent">
       <h1 class="text-2xl pb-2 border-b border-b-indigo-300">Who am I?</h1>
       <p>
         Someone who loves to create, and code is a fabulous tool for that. I've
@@ -113,6 +113,6 @@
         <a href="mailto:contact@bachrc.net">contact me</a> for a coffee together.
         I know some great places.
       </p>
-    {/snippet}
+    </svelte:fragment>
   </LocalisedContent>
 </div>
