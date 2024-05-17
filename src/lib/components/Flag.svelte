@@ -3,6 +3,7 @@
   import usFlag from '$lib/assets/us.svg';
   import { englishLocale, frenchLocale } from '$lib/i18n';
   import { locale, t } from 'svelte-i18n';
+  import { derived } from 'svelte/store';
 
   function otherLocaleIconUrl(): string {
     if ($locale === frenchLocale) {
@@ -19,11 +20,13 @@
       $locale = frenchLocale;
     }
   }
+
+  const localeIcon = derived(locale, otherLocaleIconUrl);
 </script>
 
 <button on:click={switchLocale}>
   <img
     alt={$t('changer-de-langue')}
-    src={otherLocaleIconUrl()}
+    src={$localeIcon}
     class="w-8" />
 </button>
