@@ -15,7 +15,7 @@
       {titre}
     </span>
     <div class="flex flex-row">
-      <span>Voila : {employeur}</span>
+      <span>{employeur}</span>
       <div class="grow"></div>
       <span>{duree}</span>
     </div>

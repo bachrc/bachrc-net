@@ -2,8 +2,8 @@
 import { browser } from '$app/environment';
 import { init, register } from 'svelte-i18n';
 
-export const frenchLocale = 'fr-FR';
-export const englishLocale = 'en-US';
+export const frenchLocale = 'fr';
+export const englishLocale = 'en';
 
 register(englishLocale, () => import('./locales/en.json'));
 register(frenchLocale, () => import('./locales/fr.json'));

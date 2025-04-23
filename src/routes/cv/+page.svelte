@@ -27,7 +27,7 @@
           alt={$t('mon-visage')}
           class="rounded-full h-48" />
       </picture>
-      <span class="text-2xl font-bold">Yohann B.</span>
+      <span class="text-2xl font-bold">Yohann Bacha</span>
       <span>{$t('job_title')}</span>
     </div>
     <ul>

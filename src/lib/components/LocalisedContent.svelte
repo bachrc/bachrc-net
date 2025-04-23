@@ -5,7 +5,6 @@
 
 {#if $locale == englishLocale}
   <slot name="englishContent" />
-{/if}
-{#if $locale == frenchLocale}
+{:else}
   <slot name="frenchContent" />
 {/if}
