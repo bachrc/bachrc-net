@@ -27,23 +27,11 @@
           alt={$t('mon-visage')}
           class="rounded-full h-48" />
       </picture>
-      <span class="text-2xl font-bold">Yohann Bacha</span>
+      <span class="text-2xl font-bold">Yohann B.</span>
       <span>{$t('job_title')}</span>
     </div>
     <ul>
       <li>📍 Strasbourg</li>
-      <li>
-        ✉️ <a
-          href="mailto:contact@bachrc.net"
-          class="underline underline-offset-2 text-blue-900"
-          >contact@bachrc.net</a>
-      </li>
-      <li>
-        🌐 <a
-          href="https://bachrc.net"
-          class="underline underline-offset-2 text-blue-900"
-          >https://bachrc.net</a>
-      </li>
       <li>
         🔐 <a
           href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x52141ffeb2160e20"
@@ -142,26 +130,178 @@
     </div>
   </aside>
 
-  <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-4">
+  <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-8">
     <h1 class="text-xl">{$t('experiences')}</h1>
+    <Experience
+      titre="Freelance Lead Tech"
+      employeur="Facildata"
+      duree="01/2024 - 04/2024"
+      themes={[
+        'Golang',
+        'Rust',
+        'Typescript',
+        'SvelteJS',
+        'Playwright',
+        'Nix',
+        'Docker',
+        'Linux',
+        'Postgres',
+        'MQTT',
+        "Tests d'intégration, BDD, TDD, Architecture Hexagonale",
+        'Gitlab, Gitlab CI',
+        'Github, Github Actions'
+      ]}>
+      <svelte:fragment slot="frenchContent">
+        <p>
+          Facildata est une startup bordelaise visant à simplifier la
+          maintenance d'équipements, en obtenant grâce à un QR Code,
+          l'intégralité des maintenances effectuées sur ce dernier.
+        </p>
+        <p>
+          J'ai effectué, au rythme de quelques heures par semaine en Freelance,
+          du conseil et du développement sur le projet, afin de poser des bases
+          de développement saines pour une reprise des développements en
+          interne. La mission a duré 5 mois.
+        </p>
+        <ul class=" list-disc list-inside space-y-1">
+          <li>
+            Réalisation d'un audit sur le code existant suite à des
+            problématiques de maintenabilité
+          </li>
+          <li>Prise en charge de la refonte logicielle</li>
+          <ul class=" list-disc list-inside ml-4">
+            <li>
+              Choix des technologies les plus adaptées à une reprise du logiciel
+              par des personnes en alternance, modularité pour une évolution
+              future du logiciel
+            </li>
+            <li>
+              Définition des besoins et des spécifications métier, établissement
+              d'un backlog par priorité
+            </li>
+            <li>
+              Création d'une architecture logicielle en monorepo, hexagonale,
+              testée de bout en bout
+            </li>
+          </ul>
+          <li>
+            Formation au développement Rust, Go, SvelteKit et Typescript, aux
+            pratiques de code propre du développeur en alternance m'accompagnant
+          </li>
+          <li>Réalisation de tests techniques</li>
+          <li>
+            Établissement de pipelines d'intégration et de déploiement continu
+          </li>
+          <li>
+            Mise en place d'une organisation agile en Kanban, établissement d'un
+            vocabulaire commun où le métier peut directement intervenir et
+            comprendre les tests
+          </li>
+        </ul>
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent">
+        <p>
+          I created the foundations for the software overhaul, where I
+          elaborated and designed the application's business domain. I
+          established the foundations using Hexagonal Architecture with Go in a
+          TDD approach, with automated integration tests, with CI/CD pipelines
+          on GitHub Actions.
+        </p>
+        <p>I also trained the junior developers in craft practices.</p>
+      </svelte:fragment>
+    </Experience>
     <Experience
       titre="Senior Software Engineer"
       employeur="Scalingo"
-      duree="01/2023 - {$t('aujourdhui')}"
-      themes={['Golang', 'Vue', 'Docker', 'Linux']}>
+      duree="01/2023 - 06/2024"
+      themes={[
+        'Golang',
+        'Vue',
+        'Typescript',
+        "Tests d'integration",
+        'TDD',
+        'Docker',
+        'Linux',
+        'Postgres',
+        'Git',
+        'Github Actions',
+        'Agile Kanban',
+        'Notion'
+      ]}>
       <svelte:fragment slot="frenchContent">
         <p>
-          J'ai participé au développement applicatif des micro-services, à la
-          mise en place ainsi qu'à la découverte de pratiques du craft: TDD, BDD
-          et des tests d'intégration. J'ai mis en place le système de
-          spécifications, et ai contribué à la bonne organisation des équipes de
-          développement, organisation qui s'est faite en Kanban.
+          Scalingo est un hébergeur Français souverain, qui propose une solution
+          orientée autour de l'expérience des développeurs. Je les ai rejoint en
+          tant qu'Ingénieur Logiciel Fullstack Senior pendant 1 an et 5 mois.
         </p>
-        <p>
-          J'ai également effectué du support Niveau 2 et 3, et suis intervenu
-          sur l'infrastructure pour investiguer, et résoudre les problèmes des
-          utilisateurs.
-        </p>
+
+        <ul class="list-inside list-disc space-y-1">
+          <li>Organisation du backlog et des équipes</li>
+          <ul class="ml-8 list-disc">
+            <li>Elaboration de specifications métiers</li>
+            <li>Etablissement du Kanban dans les équipes</li>
+            <li>
+              Développement de procédés afin de fluidifier les échanges
+              asynchrones dans l'équipe
+            </li>
+          </ul>
+          <li>
+            Prise en charge de projets de développement par petites équipes
+          </li>
+          <ul class="ml-8 list-disc">
+            <li>
+              Fenêtres de maintenance automatiques pour les maintenances de base
+              de données des utilisateurs
+            </li>
+            <li>
+              Correction d'une faille de sécurité potentielle sur les review
+              apps des utilisateurs
+            </li>
+          </ul>
+          <li>Développements au sein de l'équipe</li>
+          <ul class="ml-8 list-disc">
+            <li>
+              Pris part au développement de multiples fonctionnalités en binôme
+            </li>
+            <li>Correction de bugs et maintenance de la plateforme</li>
+            <ul class="ml-4 list-disc">
+              <li>Dépréciations de versions de bases de données</li>
+              <li>
+                Conception et procédures de migration de bases de données avec
+                le moins d'impact possible pour les utilisateurs
+              </li>
+            </ul>
+            <li>Documentation sur le site public de Scalingo</li>
+          </ul>
+          <li>
+            Organisation de meetups internes, centrés autour de l'échange et de
+            l'humain
+          </li>
+          <li>
+            Suport en contact direct avec les utilisateurs de la plateforme
+          </li>
+          <ul class="ml-8 list-disc">
+            <li>Prise en charge des questions et problèmes des utilisateurs</li>
+            <li>
+              Investigation et correction de problèmes sur l'infrastructure de
+              Scalingo
+            </li>
+          </ul>
+          <li>
+            Pratique et sensibilisation autour de principes d'artisanat logiciel
+          </li>
+          <ul class="ml-8 list-disc">
+            <li>Développement en TDD et BDD</li>
+            <li>
+              Sensibilisation autour du clean code et des tests au sein des
+              équipes
+            </li>
+            <li>
+              Réalisation de tests d'intégration pour la migration de versions
+              de bases de données Postgres des utilisateurs
+            </li>
+          </ul>
+        </ul>
       </svelte:fragment>
       <svelte:fragment slot="englishContent">
         <p>
@@ -176,44 +316,36 @@
         </p>
       </svelte:fragment>
     </Experience>
-    <Experience
-      titre="Freelance Lead Tech"
-      employeur="Facildata"
-      duree="01/2024 - 04/2024"
-      themes={['Golang', 'Svelte', 'Rust', 'Nix', 'Github Actions']}>
-      <svelte:fragment slot="frenchContent">
-        <p>
-          J'ai mis en place les fondations de la refonte du logiciel, et y ai
-          élaboré et conçu le métier de l'application. J'ai réalisé les
-          fondations en Architecture Hexagonale avec Go en TDD, avec tests
-          d'intégration automatisés, pipelines CI/CD sur Github Actions.
-        </p>
-        <p>
-          J'y ai également formé les jeunes développeur•euses aux pratiques
-          craft.
-        </p>
-      </svelte:fragment>
-      <svelte:fragment slot="englishContent">
-        <p>
-          I created the foundations for the software overhaul, where I
-          elaborated and designed the application's business domain. I
-          established the foundations using Hexagonal Architecture with Go in a
-          TDD approach, with automated integration tests, with CI/CD pipelines
-          on GitHub Actions.
-        </p>
-        <p>I also trained the junior developers in craft practices.</p>
-      </svelte:fragment>
-    </Experience>
+
     <Experience
       titre="Software Engineer"
       employeur="Malt"
       duree="07/2022 - 10/2022"
-      themes={['Java', 'Kotlin', 'Spring', 'Vue']}>
+      themes={[
+        'Java',
+        'Spring Boot',
+        'Vue JS',
+        'Kotlin',
+        'Cypress',
+        'Gitlab CI'
+      ]}>
       <svelte:fragment slot="frenchContent">
         <p>
-          J'ai pris part aux développements au sein de l'équipe Finances, et y
-          ai mis en place des tests d'integration.
+          Malt est une plateforme française visant à faciliter le lien entre les
+          freelances et les clients finaux. J'ai rejoint l'équipe Finance afin
+          de contribuer aux développements front et back pendant 3 mois.
         </p>
+
+        <ul class=" list-disc list-inside">
+          <li>
+            Pris part aux développements en sein de l'équipe sur des
+            fonctionnalités mineures, dans le cadre de l'onboarding
+          </li>
+          <li>
+            Mise en place de tests d'intégration afin de sécuriser des parcours
+            utilisateur
+          </li>
+        </ul>
       </svelte:fragment>
       <svelte:fragment slot="englishContent">
         <p>
@@ -226,14 +358,38 @@
       titre={$t('developpeur-full-stack')}
       employeur="SNCF Connect & Tech"
       duree="09/2021 - 07/2022"
-      themes={['Java 17', 'Angular', 'Spring', 'Kotlin', 'Redis']}>
+      themes={[
+        'Kotlin',
+        'Java',
+        'Spring Boot',
+        'AWS',
+        'REST',
+        'Redis',
+        'Gitlab CI',
+        'Kanban'
+      ]}>
       <svelte:fragment slot="frenchContent">
         <p>
-          J'ai contribué au sein de l’équipe en charge du Calculateur
-          Multi-modal d’Itinéraires. J'ai participé à l'élaboration du backlog
-          du produit, tout en l'entretenant : refacto, développement de
-          nouvelles fonctionnalités.
+          SNCF Connect & Tech est le domaine informatique de la SNCF, visant à
+          faciliter l'intéraction des françaises et français avec la société de
+          transports. J'ai pris part aux développements dans l'équipe en charge
+          de CMI : le Calculateur Multimodal d'Itinéraires, qui se charge de
+          fournir les meilleurs itinéraires possibles lorsqu'un utilisateur
+          cherche à aller d'un point A à un point B. L'équipe est composée de 7
+          développeurs•euses, 1 PO et 1 SM, et fonctionne en Kanban. La mission
+          a duré 11 mois.
         </p>
+
+        <ul class="list-inside list-disc">
+          <li>Refonte de l'architecture backend</li>
+          <li>
+            Développements et maintenances autour du logiciel, de concert avec
+            le PO
+          </li>
+          <li>
+            Participation et présentation de projets lors de hackathons internes
+          </li>
+        </ul>
       </svelte:fragment>
       <svelte:fragment slot="englishContent">
         <p>
@@ -249,27 +405,68 @@
       duree="11/2018 - 09/2021"
       themes={[
         'Java 11',
-        'Angular',
         'Spring Boot',
+        'Typescript',
+        'Angular',
         'Storybook',
         'Postgres',
-        'AWS'
+        'AWS',
+        'Architecture Hexagonale, TDD, Cucumber'
       ]}>
       <svelte:fragment slot="frenchContent">
         <p>
-          Au sein d'une équipe de 5 personnes suivant les méthodes Scrum, j'ai
-          contribué dès les débuts à l'élaboration d'une application du
-          référentiel métier de Dalkia, SEE. Un peu plus tard, j'ai participé
-          dès les premières spécifications à la réalisation d'une application
-          gérant les primes des techniciens Dalkia, cette fois-ci conçue avec
-          une architecture hexagonale.
+          Dalkia est une entreprise filiale d'EDF, spécialisée dans les services
+          énergétiques. J'ai rejoint l'équipe Alpha au sein des Ateliers
+          Numériques fonctionnant en Scrum pendant 3 ans. La mission s'est
+          effectué pour La Combe Du Lion Vert, après une formation d'un mois
+          autour du Software Craft.
         </p>
-        <p>
-          Ces deux projets m'ont permis de mettre en place des pratiques craft
-          au sein des équipes, telles que du TDD, du pair programming, et de me
-          concentrer autour du métier de l'application. Je suis également
-          intervenu sur les pipelines DevOps des applications.
-        </p>
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            Implication dans la rédaction du backlog avec un échange constant
+            avec le PO
+          </li>
+          <li>
+            Contribution à l'aspect Devops de nos logiciels, de concert avec les
+            Administrateur•ices Système
+          </li>
+          <li>
+            Organisation d'évènements internes à La Combe Du Lion Vert dans un
+            but pédagogique d'artisanat logiciel
+          </li>
+          <li>
+            Mise en place d'un environnement de machines sous Ubuntu afin de
+            fluidifier les développements des équipes des Ateliers Numériques
+          </li>
+          <li>
+            Implication dès le début du projet dans une application de
+            référentiel métier de Dalkia
+          </li>
+          <ul class="list-disc ml-4">
+            <li>
+              Source de vérité pour les autres applications du SI Dalkia,
+              activement utilisée par une trentaine de modélisateur•ices du SI
+              Dalkia
+            </li>
+
+            <li>Pair programming</li>
+            <li>TDD</li>
+            <li>BDD</li>
+            <li>Organisation avec le Scrum Master d'ateliers utilisateurs</li>
+            <li>
+              Création d'un format de rétrospective fluide utilisé par
+              l'ensemble des Ateliers Numériques
+            </li>
+          </ul>
+          <li>
+            Création d'une application gérant les primes des technicien•nes.
+          </li>
+          <ul class="list-disc ml-4">
+            <li>
+              Pair programming, TDD, BDD et Architecture Hexagonale, Cucumber
+            </li>
+          </ul>
+        </ul>
       </svelte:fragment>
       <svelte:fragment slot="englishContent">
         <p>
@@ -315,7 +512,7 @@
     <Experience
       titre={$t('developpeur-back-end')}
       employeur="Peugeot PSA"
-      duree="12/2017 - 05/2018"
+      duree="11/2017 - 05/2018"
       themes={['Java', 'Kafka', 'Spring Boot', 'Cassandra', 'Apache Flink']}>
       <svelte:fragment slot="frenchContent">
         <p>
@@ -340,6 +537,71 @@
           vehicles.
         </p>
       </svelte:fragment>
+    </Experience>
+    <Experience
+      titre={$t('developpeur-back-end')}
+      employeur="DG2R"
+      duree="03/2017 - 08/2017"
+      themes={[
+        'Arduino, C',
+        'Linux',
+        'Raspberry Pi',
+        'Informatique embarquée',
+        'Python',
+        'Micropython',
+        'Postgres',
+        'Docker',
+        'React'
+      ]}>
+      <svelte:fragment slot="frenchContent">
+        <p>
+          DG2R est un intégrateur d'automates industriels basés sur Arduino. Je
+          l'ai rejoint pendant 6 mois dans le cadre de mon projet de fin
+          d'études. Mes réalisations ont été faites seul.
+        </p>
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            Mise en place d'une infrastructure logicielle interne à DG2R
+            <ul class="list-disc ml-8">
+              <li>
+                Mise en place d'un Gitlab et Nextcloud interne afin de faciliter
+                la collaboration des employés de DG2R
+              </li>
+            </ul>
+          </li>
+          <li>
+            Création d'interfaces de contrôle de température au sein des locaux
+            de la Mairie de Boulogne Billancourt
+            <ul class="list-disc ml-8">
+              <li>
+                Conception d'interfaces sur une interface tactile embarquée
+                Linux
+              </li>
+              <li>
+                Travail avec les employés de la mairie afin de connaître leurs
+                besoins
+              </li>
+              <li>
+                Intégration avec le système de contrôle existant Continuum
+              </li>
+            </ul>
+          </li>
+          <li>
+            Développement du site internet marchand de DG2R
+            <ul class="list-disc ml-8">
+              <li>
+                Conception d'un site marchand avec Python, Django et React,
+                mettant en avant les produits vendus par DG2R
+              </li>
+              <li>
+                Mise en place d'une pipeline de déploiement continue sur un
+                Gitlab
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </svelte:fragment>
+      <svelte:fragment slot="englishContent"></svelte:fragment>
     </Experience>
   </div>
 </div>
