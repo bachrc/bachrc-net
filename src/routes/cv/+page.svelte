@@ -53,7 +53,8 @@
             'BDD',
             $t('poo'),
             'Simple Design',
-            'Craft'
+            'Craft',
+            'Architecture de solution'
           ]} />
       </div>
       <div>
@@ -87,12 +88,24 @@
         <ThemesList
           themes={[
             'Docker',
+            'Dev Containers',
             'Nix',
             'Git',
             'Gitlab CI',
             'Github Actions',
             'Linux',
             'OpenAPI'
+          ]} />
+      </div>
+      <div>
+        <h2 class="text-lg mb-1">Systèmes embarqués</h2>
+        <ThemesList
+          themes={[
+            'Yocto',
+            'Modem',
+            'Système Linux intégré',
+            'Systèmes embarqués',
+            'SIM intégrée (eSIM)'
           ]} />
       </div>
       <hr class="ml-0 w-1/2" />
@@ -132,6 +145,75 @@
 
   <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-8">
     <h1 class="text-xl">{$t('experiences')}</h1>
+    <Experience
+      name="Tech Lead Java / Rust"
+      employeur="Enedis"
+      duree="07/2024 - aujourd'hui"
+      themes={[
+        'Java',
+        'Rust',
+        'Architecture Hexagonale',
+        'DevContainers',
+        'TDD',
+        'Linux embarqué',
+        'Yocto',
+        'Modems',
+        'DevOps'
+      ]}>
+      {#snippet frenchContent()}
+          <p>
+            J'ai rejoint Enedis en membre fondateur de l'équipe i2R, en charge du développement du boitier AO3. Notre équipe est responsable du logiciel présent sur le boitier AO3, en charge de faire la liaison avec les boîtiers Linky Pro et le SI Enedis.
+          </p>
+          <p>
+            Sur ce projet où tout était à faire, mes fonctions comprennent entre autres:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Réappropriation des connaissances en interne du fonctionnement des boitiers constructeur</li>
+            <li>Mise en place d'une stack de dev et CI uniforme basée sur les DevContainers</li>
+            <li>Mise en place d'architecture hexagonale, accompagnement et formation de l'équipe aux problématiques de qualité logicielle</li>
+            <li>Etude et réappropriation des connaissances concernant le fonctionnement des modems via port série</li>
+            <li>Introduction de Rust pour le logiciel de fonctionnalités critiques, accompagnement et formation de l'équipe</li>
+            <li>Création d'un firmware en Rust interagissant avec le modem par port série</li>
+            <li>Présentation du projet auprès de différentes équipes et responsables</li>
+          </ul>
+          <p>
+            Au sein de l'équipe, ce à quoi j'ai activement pris part :
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Création d'une distribution Linux embarquée spécifique au hardware de l'AO3 avec Yocto</li>
+            <li>Participation à l'élaboration des spécifications incluses dans l'appel d'offre</li>
+            <li>Élaboration du backlog</li>
+            <li>Développement du logiciel en Java et Rust régissant le boitier</li>
+          </ul>
+      {/snippet}
+      {#snippet englishContent()}
+          <p>
+            I joined Enedis as a founding member of the i2R team, responsible for developing the AO3 device software. Our team is in charge of the software on the AO3 device, which handles the connection with Linky Pro devices and the Enedis information system.
+          </p>
+          <p>
+            On this project where everything had to be built from scratch, my responsibilities included:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Internal knowledge appropriation of manufacturer device operations</li>
+            <li>Implementation of a uniform dev stack and CI based on DevContainers</li>
+            <li>Implementation of hexagonal architecture, team training and support on software quality issues</li>
+            <li>Study and knowledge appropriation of modem operations via serial port</li>
+            <li>Introduction of Rust for critical feature software, team training and support</li>
+            <li>Creation of Rust firmware interacting with the modem via serial port</li>
+            <li>Project presentation to various teams and managers</li>
+          </ul>
+          <p>
+            Within the team, what I actively participated in:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Creation of an embedded Linux distribution specific to AO3 hardware with Yocto</li>
+            <li>Participation in the elaboration of specifications included in the call for tender</li>
+            <li>Backlog elaboration</li>
+            <li>Development of the software in Java and Rust governing the device</li>
+          </ul>
+        
+      {/snippet}
+    </Experience>
     <Experience
       name="Freelance Lead Tech"
       employeur="Facildata"
