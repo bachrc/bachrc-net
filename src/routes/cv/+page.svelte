@@ -133,7 +133,7 @@
   <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-8">
     <h1 class="text-xl">{$t('experiences')}</h1>
     <Experience
-      titre="Freelance Lead Tech"
+      name="Freelance Lead Tech"
       employeur="Facildata"
       duree="01/2024 - 04/2024"
       themes={[
@@ -211,7 +211,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre="Senior Software Engineer"
+      name="Senior Software Engineer"
       employeur="Scalingo"
       duree="01/2023 - 06/2024"
       themes={[
@@ -278,7 +278,7 @@
             l'humain
           </li>
           <li>
-            Suport en contact direct avec les utilisateurs de la plateforme
+            Support en contact direct avec les utilisateurs de la plateforme
           </li>
           <ul class="ml-8 list-disc">
             <li>Prise en charge des questions et problèmes des utilisateurs</li>
@@ -318,7 +318,7 @@
     </Experience>
 
     <Experience
-      titre="Software Engineer"
+      name="Software Engineer"
       employeur="Malt"
       duree="07/2022 - 10/2022"
       themes={[
@@ -355,7 +355,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre={$t('developpeur-full-stack')}
+      name={$t('developpeur-full-stack')}
       employeur="SNCF Connect & Tech"
       duree="09/2021 - 07/2022"
       themes={[
@@ -400,7 +400,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre={$t('developpeur-full-stack')}
+      name={$t('developpeur-full-stack')}
       employeur="Dalkia"
       duree="11/2018 - 09/2021"
       themes={[
@@ -486,7 +486,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre={$t('developpeur-full-stack')}
+      name={$t('developpeur-full-stack')}
       employeur="Allianz"
       duree="05/2018 - 09/2018"
       themes={['Java', 'Spring Boot', 'React']}>
@@ -510,7 +510,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre={$t('developpeur-back-end')}
+      name={$t('developpeur-back-end')}
       employeur="Peugeot PSA"
       duree="11/2017 - 05/2018"
       themes={['Java', 'Kafka', 'Spring Boot', 'Cassandra', 'Apache Flink']}>
@@ -539,7 +539,7 @@
       </svelte:fragment>
     </Experience>
     <Experience
-      titre={$t('developpeur-back-end')}
+      name={$t('developpeur-back-end')}
       employeur="DG2R"
       duree="03/2017 - 08/2017"
       themes={[

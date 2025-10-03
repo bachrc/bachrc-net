@@ -10,5 +10,7 @@ register(frenchLocale, () => import('./locales/fr.json'));
 
 init({
   fallbackLocale: frenchLocale,
-  initialLocale: browser ? window.navigator.language : frenchLocale
+  initialLocale: browser
+    ? window.navigator.language.split('-')[0]
+    : frenchLocale
 });

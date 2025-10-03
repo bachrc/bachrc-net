@@ -3,7 +3,7 @@
   import { t } from 'svelte-i18n';
   import LocalisedContent from './LocalisedContent.svelte';
 
-  export let titre: string;
+  export let name: string;
   export let employeur: string;
   export let duree: string;
   export let themes: string[];
@@ -12,7 +12,7 @@
 <div class="flex flex-col">
   <div class="flex flex-col bg-white/20 p-2">
     <span class="font-bold text-base">
-      {titre}
+      {name}
     </span>
     <div class="flex flex-row">
       <span>{employeur}</span>
