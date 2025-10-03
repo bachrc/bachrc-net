@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import '../app.css';
   import { base } from '$app/paths';
 
@@ -6,6 +6,11 @@
   import Flag from '$lib/components/Flag.svelte';
   import '$lib/i18n';
   import { isLoading, t } from 'svelte-i18n';
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -43,7 +48,7 @@
     <main
       class="flex grow"
       id="contenu">
-      <slot></slot>
+      {@render children?.()}
     </main>
     <footer class="sm:container sm:mx-auto no-print my-4 flex gap-4 flex-row">
       <span>Yohann Bacha, 2024</span>

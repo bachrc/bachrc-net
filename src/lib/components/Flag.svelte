@@ -24,7 +24,7 @@
   const localeIcon = derived(locale, otherLocaleIconUrl);
 </script>
 
-<button on:click={switchLocale}>
+<button onclick={switchLocale}>
   <img
     alt={$t('changer-de-langue')}
     src={$localeIcon}

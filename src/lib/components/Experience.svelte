@@ -3,10 +3,26 @@
   import { t } from 'svelte-i18n';
   import LocalisedContent from './LocalisedContent.svelte';
 
-  export let name: string;
-  export let employeur: string;
-  export let duree: string;
-  export let themes: string[];
+  interface Props {
+    name: string;
+    employeur: string;
+    duree: string;
+    themes: string[];
+    englishContent?: import('svelte').Snippet;
+    frenchContent?: import('svelte').Snippet;
+  }
+
+  let {
+    name,
+    employeur,
+    duree,
+    themes,
+    englishContent,
+    frenchContent
+  }: Props = $props();
+
+  const englishContent_render = $derived(englishContent);
+  const frenchContent_render = $derived(frenchContent);
 </script>
 
 <div class="flex flex-col">
@@ -22,12 +38,16 @@
   </div>
   <div class="flex flex-col gap-2 text-justify p-2">
     <LocalisedContent>
-      <svelte:fragment slot="englishContent">
-        <slot name="englishContent" />
-      </svelte:fragment>
-      <svelte:fragment slot="frenchContent">
-        <slot name="frenchContent" />
-      </svelte:fragment>
+      {#snippet englishContent()}
+          
+          {@render englishContent_render?.()}
+        
+          {/snippet}
+      {#snippet frenchContent()}
+          
+          {@render frenchContent_render?.()}
+        
+          {/snippet}
     </LocalisedContent>
   </div>
   {#if themes.length > 0}

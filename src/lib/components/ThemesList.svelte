@@ -1,5 +1,9 @@
 <script lang="ts">
-  export let themes: string[];
+  interface Props {
+    themes: string[];
+  }
+
+  let { themes }: Props = $props();
 </script>
 
 <ul class="themes">
