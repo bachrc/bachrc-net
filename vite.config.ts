@@ -1,16 +1,10 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig, searchForWorkspaceRoot } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [sveltekit()],
-  server: {
-    fs: {
-      allow: [
-        // search up for workspace root
-        searchForWorkspaceRoot(process.cwd())
-      ]
-    }
-  },
+  plugins: [sveltekit(), tailwindcss()],
+  
   build: {
     // Ensure assets are properly referenced with base path
     assetsDir: 'assets'

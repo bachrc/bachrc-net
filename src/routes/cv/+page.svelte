@@ -1,9 +1,9 @@
 <script lang="ts">
+  import photoAvif from '$lib/assets/photo.avif';
+  import photoPng from '$lib/assets/photo.png';
+  import photoWebp from '$lib/assets/photo.webp';
   import Experience from '$lib/components/Experience.svelte';
   import ThemesList from '$lib/components/ThemesList.svelte';
-  import photoAvif from '$lib/assets/photo.avif';
-  import photoWebp from '$lib/assets/photo.webp';
-  import photoPng from '$lib/assets/photo.png';
   import { t } from 'svelte-i18n';
 </script>
 
@@ -553,7 +553,7 @@
           </p>
         
           {/snippet}
-      {#snippet englishContent()}
+          {#snippet englishContent()}
           
           <p>
             I developed a statistical tool with Spring Boot that detects vehicle
@@ -631,8 +631,8 @@
           </ul>
         
           {/snippet}
-      {#snippet englishContent()}
-            <svelte:fragment ></svelte:fragment>
+          {#snippet englishContent()}
+            <span></span>
           {/snippet}
     </Experience>
   </div>

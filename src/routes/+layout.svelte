@@ -1,6 +1,6 @@
 <script lang="ts">
-  import '../app.css';
   import { base } from '$app/paths';
+  import '../app.css';
 
   import pngIcon from '$lib/assets/coffee-icon.png';
   import Flag from '$lib/components/Flag.svelte';
@@ -58,6 +58,8 @@
 {/if}
 
 <style lang="postcss">
+  @reference "tailwindcss";
+  
   a.evitement {
     position: absolute;
     left: -99999px;
