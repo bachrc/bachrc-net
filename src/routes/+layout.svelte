@@ -1,5 +1,6 @@
 <script>
   import '../app.css';
+  import { base } from '$app/paths';
 
   import pngIcon from '$lib/assets/coffee-icon.png';
   import Flag from '$lib/components/Flag.svelte';
@@ -32,11 +33,11 @@
   <div class="flex flex-col mx-2 min-h-screen">
     <nav
       class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end sm:container sm:mx-auto">
-      <a href="/">{$t('home')}</a>
+      <a href="{base}/">{$t('home')}</a>
       <span>-</span>
-      <a href="/a-propos">{$t('a-propos')}</a>
+      <a href="{base}/a-propos">{$t('a-propos')}</a>
       <span>-</span>
-      <a href="/cv">{$t('cv')}</a>
+      <a href="{base}/cv">{$t('cv')}</a>
       <Flag />
     </nav>
     <main
@@ -46,7 +47,7 @@
     </main>
     <footer class="sm:container sm:mx-auto no-print my-4 flex gap-4 flex-row">
       <span>Yohann Bacha, 2024</span>
-      <a href="/plan">{$t('plan-du-site')}</a>
+      <a href="{base}/plan">{$t('plan-du-site')}</a>
     </footer>
   </div>
 {/if}

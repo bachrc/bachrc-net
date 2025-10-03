@@ -10,5 +10,9 @@ export default defineConfig({
         searchForWorkspaceRoot(process.cwd())
       ]
     }
+  },
+  build: {
+    // Ensure assets are properly referenced with base path
+    assetsDir: 'assets'
   }
 });

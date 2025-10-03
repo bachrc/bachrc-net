@@ -13,11 +13,13 @@ const config = {
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter({
       pages: 'build',
-      assets: 'build',
-      fallback: null,
-      precompress: false,
-      strict: true
-    })
+      fallback: '404.html',
+      strict: true,
+      precompress: false
+    }),
+    paths: {
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		}
   }
 };
 

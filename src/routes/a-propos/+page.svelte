@@ -1,6 +1,7 @@
 <script>
   import LocalisedContent from '$lib/components/LocalisedContent.svelte';
   import { t } from 'svelte-i18n';
+  import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -55,7 +56,7 @@
         Prenons un café ?
       </h1>
       <p>
-        Vous pouvez <a href="/cv">consulter mon CV</a> pour découvrir mes
+        Vous pouvez <a href="{base}/cv">consulter mon CV</a> pour découvrir mes
         compétences et précédentes expériences,
         <a href="https://github.com/bachrc">consulter mon profil Github</a>
         pour y voir quelques expérimentations open-source que j'ai réalisé, et également
@@ -106,7 +107,7 @@
         Let's take a coffee?
       </h1>
       <p>
-        You can <a href="/cv">check out my CV</a> to find out about my skills
+        You can <a href="{base}/cv">check out my CV</a> to find out about my skills
         and previous experience,
         <a href="https://github.com/bachrc">check out my Github profile</a>
         to see some of the open-source experiments I've done, and also
