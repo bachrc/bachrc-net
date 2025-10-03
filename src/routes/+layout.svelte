@@ -1,11 +1,10 @@
 <script>
   import '../app.css';
 
-  import '$lib/i18n';
-  import { isLoading } from 'svelte-i18n';
-  import { t } from 'svelte-i18n';
-  import Flag from '$lib/components/Flag.svelte';
   import pngIcon from '$lib/assets/coffee-icon.png';
+  import Flag from '$lib/components/Flag.svelte';
+  import '$lib/i18n';
+  import { isLoading, t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -38,8 +37,6 @@
       <a href="/a-propos">{$t('a-propos')}</a>
       <span>-</span>
       <a href="/cv">{$t('cv')}</a>
-      <span>-</span>
-      <a href="https://jardin.cyberendroit.net/Articles/">Blog</a>
       <Flag />
     </nav>
     <main
