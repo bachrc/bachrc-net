@@ -6,6 +6,7 @@
   import Flag from '$lib/components/Flag.svelte';
   import '$lib/i18n';
   import { isLoading, t } from 'svelte-i18n';
+  import { resolve } from 'path';
   interface Props {
     children?: import('svelte').Snippet;
   }
@@ -38,11 +39,13 @@
   <div class="flex flex-col mx-2 min-h-screen">
     <nav
       class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end sm:container sm:mx-auto">
-      <a href="{base}/">{$t('home')}</a>
+      <a href={resolve('/')}>{$t('home')}</a>
       <span>-</span>
-      <a href="{base}/a-propos">{$t('a-propos')}</a>
+      <a href="https://jardin.bachrc.net/now">{$t('a-propos')}</a>
       <span>-</span>
-      <a href="{base}/cv">{$t('cv')}</a>
+      <a href="https://jardin.bachrc.net">Blog</a>
+      <span>-</span>
+      <a href={resolve('/cv')}>{$t('cv')}</a>
       <Flag />
     </nav>
     <main
@@ -51,15 +54,15 @@
       {@render children?.()}
     </main>
     <footer class="sm:container sm:mx-auto no-print my-4 flex gap-4 flex-row">
-      <span>Yohann Bacha, 2024</span>
-      <a href="{base}/plan">{$t('plan-du-site')}</a>
+      <span>Yohann Bacha, 2025</span>
+      <a href={resolve('/plan')}>{$t('plan-du-site')}</a>
     </footer>
   </div>
 {/if}
 
 <style lang="postcss">
   @reference "tailwindcss";
-  
+
   a.evitement {
     position: absolute;
     left: -99999px;
