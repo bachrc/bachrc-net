@@ -1,12 +1,11 @@
 <script lang="ts">
-  import { base } from '$app/paths';
+  import { resolve } from '$app/paths';
   import '../app.css';
 
   import pngIcon from '$lib/assets/coffee-icon.png';
   import Flag from '$lib/components/Flag.svelte';
   import '$lib/i18n';
   import { isLoading, t } from 'svelte-i18n';
-  import { resolve } from 'path';
   interface Props {
     children?: import('svelte').Snippet;
   }
