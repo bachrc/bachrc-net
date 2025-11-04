@@ -40,7 +40,7 @@
       class="px-4 flex flex-row py-2 gap-2 sm:gap-4 h-12 no-print justify-end sm:container sm:mx-auto">
       <a href={resolve('/')}>{$t('home')}</a>
       <span>-</span>
-      <a href="https://jardin.bachrc.net/now">{$t('a-propos')}</a>
+      <a href="https://jardin.bachrc.net/a-propos">{$t('a-propos')}</a>
       <span>-</span>
       <a href="https://jardin.bachrc.net">Blog</a>
       <span>-</span>
