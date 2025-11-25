@@ -196,6 +196,10 @@
           <li>
             Présentation du projet auprès de différentes équipes et responsables
           </li>
+          <li>
+            Reverse-engineer des compteurs Enedis SAPHIR et PME-PMI, via les
+            protocoles DLMS et COSEM
+          </li>
         </ul>
         <p>Au sein de l'équipe, ce à quoi j'ai activement pris part :</p>
         <ul class="list-disc list-inside space-y-1">
@@ -247,6 +251,10 @@
             Creation of Rust firmware interacting with the modem via serial port
           </li>
           <li>Project presentation to various teams and managers</li>
+          <li>
+            Reverse engineering study on how to communicate with nation-wide
+            electricity meters using DLMS and COSEM protocols
+          </li>
         </ul>
         <p>Within the team, what I actively participated in:</p>
         <ul class="list-disc list-inside space-y-1">
@@ -445,7 +453,7 @@
         </p>
 
         <p><strong>Backlog and Team Organization</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Developed business specifications</li>
           <li>Established Kanban processes within teams</li>
           <li>
@@ -454,13 +462,13 @@
         </ul>
 
         <p><strong>Led Small Team Development Projects</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Automated maintenance windows for user database maintenance</li>
           <li>Fixed a potential security vulnerability in user review apps</li>
         </ul>
 
         <p><strong>Team Development Work</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>
             Contributed to multiple features through pair programming in Go
           </li>
@@ -478,12 +486,12 @@
         </ul>
 
         <p><strong>Organized Internal Meetups</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Focused on knowledge sharing and human-centered team building</li>
         </ul>
 
         <p><strong>Direct User Support</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Handled user questions and troubleshooting</li>
           <li>
             Investigated and resolved infrastructure issues leveraging deep
@@ -492,7 +500,7 @@
         </ul>
 
         <p><strong>Software Craftsmanship Practices and Advocacy</strong></p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Applied TDD and BDD development</li>
           <li>Promoted clean code and testing practices within teams</li>
           <li>
@@ -538,7 +546,7 @@
           joined the Finance team as a developer contributing to both frontend
           and backend work for 3 months.
         </p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>
             Contributed to minor feature development as part of onboarding
           </li>
@@ -595,7 +603,7 @@
           developers, 1 Product Owner, and 1 Scrum Master, operating in Kanban.
           The assignment lasted 11 months.
         </p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>Backend architecture overhaul</li>
           <li>
             Software development and maintenance in collaboration with the
@@ -683,7 +691,7 @@
           years at La Combe Du Lion Vert, following a one-month Software Craft
           training.
         </p>
-        <ul>
+        <ul class="list-disc list-inside space-y-1">
           <li>
             Actively contributed to backlog refinement through constant
             collaboration with the Product Owner
@@ -702,29 +710,28 @@
           </li>
           <li>
             Involved from inception in Dalkia's business reference application
-            <ul>
-              <li>
-                Single source of truth for other Dalkia IT systems, actively
-                used by approximately 30 business modelers
-              </li>
-              <li>Pair programming</li>
-              <li>TDD</li>
-              <li>BDD</li>
-              <li>Organized user workshops with the Scrum Master</li>
-              <li>
-                Created a streamlined retrospective format adopted across all
-                Digital Workshops
-              </li>
-            </ul>
           </li>
-          <li>
-            Developed an application managing technician bonuses
-            <ul>
-              <li>
-                Pair programming, TDD, BDD, Hexagonal Architecture, Cucumber
-              </li>
-            </ul>
-          </li>
+          <ul class="list-disc ml-8">
+            <li>
+              Single source of truth for other Dalkia IT systems, actively used
+              by approximately 30 business modelers
+            </li>
+            <li>Pair programming</li>
+            <li>TDD</li>
+            <li>BDD</li>
+            <li>Organized user workshops with the Scrum Master</li>
+            <li>
+              Created a streamlined retrospective format adopted across all
+              Digital Workshops
+            </li>
+          </ul>
+
+          <li>Developed an application managing technician bonuses</li>
+          <ul class="list-disc ml-8">
+            <li>
+              Pair programming, TDD, BDD, Hexagonal Architecture, Cucumber
+            </li>
+          </ul>
         </ul>
       {/snippet}
     </Experience>
@@ -850,39 +857,36 @@
           for 6 months as part of my final academic project, working
           independently on all deliverables.
         </p>
-        <ul>
-          <li>
-            Established internal software infrastructure for DG2R
-            <ul>
-              <li>
-                Deployed internal GitLab and Nextcloud to facilitate employee
-                collaboration
-              </li>
-            </ul>
-          </li>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Established internal software infrastructure for DG2R</li>
+          <ul class="list-disc ml-8">
+            <li>
+              Deployed internal GitLab and Nextcloud to facilitate employee
+              collaboration
+            </li>
+          </ul>
+
           <li>
             Created temperature control interfaces for Boulogne-Billancourt City
             Hall facilities
-            <ul>
-              <li>
-                Designed interfaces for an embedded Linux touchscreen system
-              </li>
-              <li>
-                Collaborated with city hall employees to understand their needs
-              </li>
-              <li>Integrated with the existing Continuum control system</li>
-            </ul>
           </li>
-          <li>
-            Developed DG2R's e-commerce website
-            <ul>
-              <li>
-                Built an e-commerce platform using Python, Django, and React,
-                showcasing DG2R's products
-              </li>
-              <li>Implemented continuous deployment pipeline on GitLab</li>
-            </ul>
-          </li>
+          <ul class="list-disc ml-8">
+            <li>
+              Designed interfaces for an embedded Linux touchscreen system
+            </li>
+            <li>
+              Collaborated with city hall employees to understand their needs
+            </li>
+            <li>Integrated with the existing Continuum control system</li>
+          </ul>
+          <li>Developed DG2R's e-commerce website</li>
+          <ul class="list-disc ml-8">
+            <li>
+              Built an e-commerce platform using Python, Django, and React,
+              showcasing DG2R's products
+            </li>
+            <li>Implemented continuous deployment pipeline on GitLab</li>
+          </ul>
         </ul>
       {/snippet}
     </Experience>
