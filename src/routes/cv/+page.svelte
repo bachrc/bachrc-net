@@ -438,15 +438,67 @@
       {/snippet}
       {#snippet englishContent()}
         <p>
-          I participated in the application development of microservices, in the
-          implementation and discovery of craft practices: TDD, BDD, and
-          integration testing. I also contributed to the organization of
-          development teams with a Kanban-based approach and specifications.
+          Scalingo is a French sovereign hosting provider offering a
+          developer-focused platform. I joined as a Senior Fullstack Software
+          Engineer for 1 year and 5 months, working primarily in Go and
+          requiring advanced Linux expertise.
         </p>
-        <p>
-          I also provided Level 2 and 3 support, and worked on the
-          infrastructure to investigate and resolve user issues.
-        </p>
+
+        <p><strong>Backlog and Team Organization</strong></p>
+        <ul>
+          <li>Developed business specifications</li>
+          <li>Established Kanban processes within teams</li>
+          <li>
+            Created procedures to streamline asynchronous team communication
+          </li>
+        </ul>
+
+        <p><strong>Led Small Team Development Projects</strong></p>
+        <ul>
+          <li>Automated maintenance windows for user database maintenance</li>
+          <li>Fixed a potential security vulnerability in user review apps</li>
+        </ul>
+
+        <p><strong>Team Development Work</strong></p>
+        <ul>
+          <li>
+            Contributed to multiple features through pair programming in Go
+          </li>
+          <li>
+            Bug fixes and platform maintenance
+            <ul>
+              <li>Deprecated database versions</li>
+              <li>
+                Designed and implemented database migration procedures
+                minimizing user impact
+              </li>
+            </ul>
+          </li>
+          <li>Documentation for Scalingo's public website</li>
+        </ul>
+
+        <p><strong>Organized Internal Meetups</strong></p>
+        <ul>
+          <li>Focused on knowledge sharing and human-centered team building</li>
+        </ul>
+
+        <p><strong>Direct User Support</strong></p>
+        <ul>
+          <li>Handled user questions and troubleshooting</li>
+          <li>
+            Investigated and resolved infrastructure issues leveraging deep
+            Linux knowledge
+          </li>
+        </ul>
+
+        <p><strong>Software Craftsmanship Practices and Advocacy</strong></p>
+        <ul>
+          <li>Applied TDD and BDD development</li>
+          <li>Promoted clean code and testing practices within teams</li>
+          <li>
+            Created integration tests for PostgreSQL database version migrations
+          </li>
+        </ul>
       {/snippet}
     </Experience>
 
@@ -482,9 +534,18 @@
       {/snippet}
       {#snippet englishContent()}
         <p>
-          I took part in the development efforts within the Finance team, where
-          I implemented integration testing.
+          Malt is a French platform connecting freelancers with clients. I
+          joined the Finance team as a developer contributing to both frontend
+          and backend work for 3 months.
         </p>
+        <ul>
+          <li>
+            Contributed to minor feature development as part of onboarding
+          </li>
+          <li>
+            Implemented integration tests to secure critical user journeys
+          </li>
+        </ul>
       {/snippet}
     </Experience>
     <Experience
@@ -526,10 +587,24 @@
       {/snippet}
       {#snippet englishContent()}
         <p>
-          I was part of the team responsible for the Calculateur Multi-modal
-          d’Itinéraires. There, I contributed to the elaboration of the product
-          backlog, while maintaining it: refactoring, developing new features.
+          SNCF Connect & Tech is the IT division of SNCF, France's national
+          railway company, facilitating user interactions with the
+          transportation network. I contributed to the CMI (Multimodal Journey
+          Calculator) team, responsible for providing optimal routes when users
+          search for journeys from point A to point B. The team consisted of 7
+          developers, 1 Product Owner, and 1 Scrum Master, operating in Kanban.
+          The assignment lasted 11 months.
         </p>
+        <ul>
+          <li>Backend architecture overhaul</li>
+          <li>
+            Software development and maintenance in collaboration with the
+            Product Owner
+          </li>
+          <li>
+            Participated in and presented projects during internal hackathons
+          </li>
+        </ul>
       {/snippet}
     </Experience>
     <Experience
@@ -603,19 +678,54 @@
       {/snippet}
       {#snippet englishContent()}
         <p>
-          As part of a 5-person team following Scrum methodologies, I joined
-          from the beginning in the development of a business repository
-          application for Dalkia, SEE. Later on, I was involved from the initial
-          specifications in the creation of an application managing technician
-          bonuses at Dalkia, this time designed with a hexagonal architecture.
+          Dalkia is an EDF subsidiary specializing in energy services. I joined
+          the Alpha team within the Digital Workshops, working in Scrum for 3
+          years at La Combe Du Lion Vert, following a one-month Software Craft
+          training.
         </p>
-
-        <p>
-          For both of these projects, I contributed to the implementation of
-          craft practices within the teams, such as TDD, pair programming, and
-          focusing on the application's business domain. I also worked on the
-          DevOps pipelines for the applications.
-        </p>
+        <ul>
+          <li>
+            Actively contributed to backlog refinement through constant
+            collaboration with the Product Owner
+          </li>
+          <li>
+            Contributed to DevOps aspects of our software in coordination with
+            System Administrators
+          </li>
+          <li>
+            Organized internal events at La Combe Du Lion Vert focused on
+            software craftsmanship education
+          </li>
+          <li>
+            Set up Ubuntu-based development environments to streamline work
+            across Digital Workshop teams
+          </li>
+          <li>
+            Involved from inception in Dalkia's business reference application
+            <ul>
+              <li>
+                Single source of truth for other Dalkia IT systems, actively
+                used by approximately 30 business modelers
+              </li>
+              <li>Pair programming</li>
+              <li>TDD</li>
+              <li>BDD</li>
+              <li>Organized user workshops with the Scrum Master</li>
+              <li>
+                Created a streamlined retrospective format adopted across all
+                Digital Workshops
+              </li>
+            </ul>
+          </li>
+          <li>
+            Developed an application managing technician bonuses
+            <ul>
+              <li>
+                Pair programming, TDD, BDD, Hexagonal Architecture, Cucumber
+              </li>
+            </ul>
+          </li>
+        </ul>
       {/snippet}
     </Experience>
     <Experience
@@ -735,7 +845,45 @@
         </ul>
       {/snippet}
       {#snippet englishContent()}
-        <span></span>
+        <p>
+          DG2R is an Arduino-based industrial automation integrator. I joined
+          for 6 months as part of my final academic project, working
+          independently on all deliverables.
+        </p>
+        <ul>
+          <li>
+            Established internal software infrastructure for DG2R
+            <ul>
+              <li>
+                Deployed internal GitLab and Nextcloud to facilitate employee
+                collaboration
+              </li>
+            </ul>
+          </li>
+          <li>
+            Created temperature control interfaces for Boulogne-Billancourt City
+            Hall facilities
+            <ul>
+              <li>
+                Designed interfaces for an embedded Linux touchscreen system
+              </li>
+              <li>
+                Collaborated with city hall employees to understand their needs
+              </li>
+              <li>Integrated with the existing Continuum control system</li>
+            </ul>
+          </li>
+          <li>
+            Developed DG2R's e-commerce website
+            <ul>
+              <li>
+                Built an e-commerce platform using Python, Django, and React,
+                showcasing DG2R's products
+              </li>
+              <li>Implemented continuous deployment pipeline on GitLab</li>
+            </ul>
+          </li>
+        </ul>
       {/snippet}
     </Experience>
   </div>
