@@ -145,7 +145,7 @@
     <Experience
       name="Ingénieur Logiciel Senior Rust"
       employeur="Confidentiel"
-      duree="01/2025 - 04/2025"
+      duree="01/2026 - 04/2026"
       themes={[
         'Rust',
         'Architecture Hexagonale',
