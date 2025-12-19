@@ -143,9 +143,72 @@
   <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-8">
     <h1 class="text-xl">{$t('experiences')}</h1>
     <Experience
+      name="Ingénieur Logiciel Sénior"
+      employeur="Confidentiel"
+      duree="01/2025 - 04/2025"
+      themes={[
+        'Rust',
+        'Architecture Hexagonale',
+        'DevContainers',
+        'Nix',
+        'TDD',
+        'DDD',
+        'DevOps'
+      ]}>
+      {#snippet frenchContent()}
+        <p>
+          Je rejoindrai les équipes de développement de mon client pendant trois
+          mois afin d'intégrer une équipe de quatre développeurs, dans un cadre
+          agile. Je me joindrai aux développements de la codebase Rust, et
+          formerai mes collègues plus juniors en Rust aux pratiques de
+          production du langage.
+        </p>
+        <p>Mes missions seront entre autres :</p>
+        <ul>
+          <li>Contribuer à la maintenance des flux existants</li>
+          <li>
+            Réaliser des refontes des solutions existantes no code vers du Rust
+          </li>
+          <li>
+            Contribuer aux migrations fonctionnelles du legacy vers le nouveau
+            socle Rust
+          </li>
+          <li>
+            Revoir et challenger les bases de données et workflows existants
+          </li>
+          <li>
+            Collaborer étroitement avec le lead développeur et les autres
+            membres de l’équipe pour sécuriser la réussite des projets.
+          </li>
+        </ul>
+      {/snippet}
+      {#snippet englishContent()}
+        <p>
+          Joined the client's development department for a three-month mission,
+          integrating into a four-person squad in an Agile environment.
+          Contributed to the Rust codebase while mentoring junior developers on
+          language-specific production standards.
+        </p>
+        <p>Key responsibilities:</p>
+        <ul>
+          <li>Maintaining existing data flows</li>
+          <li>Refactoring and migrating existing no-code solutions to Rust</li>
+          <li>
+            Driving functional migrations from legacy systems to the new Rust
+            foundation
+          </li>
+          <li>Auditing and optimizing existing databases and workflows</li>
+          <li>
+            Collaborating with the Lead Developer and team members to ensure
+            delivery success.
+          </li>
+        </ul>
+      {/snippet}
+    </Experience>
+    <Experience
       name="Tech Lead Java / Rust"
       employeur="Enedis"
-      duree="07/2024 - aujourd'hui"
+      duree="07/2024 - 12/2025"
       themes={[
         'Java',
         'Rust',
