@@ -143,7 +143,7 @@
   <div class="flex flex-col w-11/12 sm:w-3/4 p-4 self-center gap-8">
     <h1 class="text-xl">{$t('experiences')}</h1>
     <Experience
-      name="Ingénieur Logiciel Sénior"
+      name="Ingénieur Logiciel Senior Rust"
       employeur="Confidentiel"
       duree="01/2025 - 04/2025"
       themes={[
